@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="using:SampleApp"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="200"
+        x:Class="SampleApp.MainWindow"
+        x:DataType="local:MainWindowViewModel"
+        Title="SampleApp2"
+        Width="400" Height="200">
+
+  <!-- コントロールを縦に並べるStackPanel -->
+  <StackPanel Spacing="10" Margin="20">
+    <TextBlock Text="名前を入力してください:" />
+
+    <!-- TextプロパティをViewModelのUserNameプロパティにバインド -->
+    <TextBox Text="{Binding UserName, Mode=TwoWay}" />
+
+    <!-- CommandプロパティをViewModelのGreetCommandにバインド -->
+    <Button Content="挨拶する" Command="{Binding GreetCommand}" />
+
+    <!-- TextプロパティをViewModelのGreetingプロパティにバインド -->
+    <TextBlock Text="{Binding Greeting}" FontSize="16" HorizontalAlignment="Center" Margin="0,10,0,0" />
+  </StackPanel>
+
+</Window>
