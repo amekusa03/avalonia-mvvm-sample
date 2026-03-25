@@ -26,6 +26,7 @@ Thumbs.db
 
 # private Markdown files
 qiita.md
+*.mp4
 
 # Editor temp files
 *~

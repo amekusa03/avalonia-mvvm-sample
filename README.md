@@ -2,6 +2,15 @@
 
 これは、Avalonia UIフレームワークとMVVMパターンを学習するために作成したサンプルアプリケーションです。
 
+
+## Qiita記事
+
+[本ツールの解説記事 (Qiita)](https://qiita.com/amekusa03/items/3748cff53c5111ecec50)
+
+## 紹介動画
+
+[![紹介動画](https://img.youtube.com/vi/dhkjU1KkbTw/maxresdefault.jpg)](https://youtu.be/dhkjU1KkbTw?si=0UPiyAGxs4v6kLlU)
+
 ## 機能
 - テキストボックスに入力した名前に対して挨拶メッセージを表示します。
 - MVVMパターン（Model-View-ViewModel）の基本的な実装を含んでいます。
