@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace SampleApp;
 
-// ViewModelからViewへ変更を通知するための仕組みを実装したベースクラス
+// Base class implementing the mechanism to notify the View of changes from the ViewModel
 public abstract class ViewModelBase : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;
@@ -16,7 +16,7 @@ public abstract class ViewModelBase : INotifyPropertyChanged
     }
 }
 
-// ボタンのクリックなどを処理するシンプルなコマンドクラス
+// Simple command class to handle actions like button clicks
 public class DelegateCommand : ICommand
 {
     private readonly Action _execute;
@@ -40,7 +40,7 @@ public class MainWindowViewModel : ViewModelBase
     private string _userName = string.Empty;
     private string _greeting = "名前を入力してボタンを押してください。";
 
-    // ViewのTextBoxにバインドするプロパティ
+    // Property bound to the TextBox in the View
     public string UserName
     {
         get => _userName;
@@ -48,23 +48,23 @@ public class MainWindowViewModel : ViewModelBase
         {
             _userName = value;
             OnPropertyChanged();
-            // UserNameが変更されたらコマンドの実行可否も変わる可能性があるため通知する
+            // Notify that the command's executable state may have changed when UserName changes
             (GreetCommand as DelegateCommand)?.RaiseCanExecuteChanged();
         }
     }
 
-    // ViewのTextBlockにバインドするプロパティ
+    // Property bound to the TextBlock in the View
     public string Greeting
     {
         get => _greeting;
-        private set // Viewから変更されないようにprivate setにする
+        private set // Use private set to prevent modification directly from the View
         {
             _greeting = value;
             OnPropertyChanged();
         }
     }
 
-    // ViewのButtonにバインドするコマンド
+    // Command bound to the Button in the View
     public ICommand GreetCommand { get; }
 
     public MainWindowViewModel()

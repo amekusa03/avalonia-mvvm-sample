@@ -1,26 +1,27 @@
-# SampleApp2 - Avalonia学習用アプリ
+[English](README.md) | [日本語](README.jp.md)
 
-これは、Avalonia UIフレームワークとMVVMパターンを学習するために作成したサンプルアプリケーションです。
+# SampleApp2 - Avalonia Learning App
 
+A sample application designed to learn the Avalonia UI framework and the MVVM (Model-View-ViewModel) pattern.
 
-## Qiita記事
+## Qiita Article
 
-[本ツールの解説記事 (Qiita)](https://qiita.com/amekusa03/items/3748cff53c5111ecec50)
+[Article explaining this app (Qiita - Japanese)](https://qiita.com/amekusa03/items/3748cff53c5111ecec50)
 
-## 紹介動画
+## Demo Video
 
-[![紹介動画](https://img.youtube.com/vi/dhkjU1KkbTw/maxresdefault.jpg)](https://youtu.be/dhkjU1KkbTw?si=0UPiyAGxs4v6kLlU)
+[![Demo Video](https://img.youtube.com/vi/dhkjU1KkbTw/maxresdefault.jpg)](https://youtu.be/dhkjU1KkbTw?si=0UPiyAGxs4v6kLlU)
 
-## 機能
-- テキストボックスに入力した名前に対して挨拶メッセージを表示します。
-- MVVMパターン（Model-View-ViewModel）の基本的な実装を含んでいます。
+## Features
+- Displays a greeting message personalized to the name entered in the text box.
+- Demonstrates a fundamental implementation of the MVVM pattern (Model-View-ViewModel).
 
-## 関連情報
+## Related Information
 
-このリポジトリのコードに関する解説や学習の過程をQiitaの記事にまとめています。
+Detailed explanations and learning notes about the repository code are documented on Qiita:
 
-- **[VS CodeではじめるAvalonia UI開発：SampleAppを動かす](https://qiita.com/amekusa03/items/3748cff53c5111ecec50)**
+- **[Getting Started with Avalonia UI Development in VS Code: Running SampleApp (Japanese)](https://qiita.com/amekusa03/items/3748cff53c5111ecec50)**
 
-## 開発環境
+## Development Environment
 - .NET 8
 - Avalonia 11

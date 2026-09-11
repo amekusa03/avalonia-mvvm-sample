@@ -9,17 +9,17 @@
         Title="SampleApp2"
         Width="400" Height="200">
 
-  <!-- コントロールを縦に並べるStackPanel -->
+  <!-- StackPanel to arrange controls vertically -->
   <StackPanel Spacing="10" Margin="20">
     <TextBlock Text="名前を入力してください:" />
 
-    <!-- TextプロパティをViewModelのUserNameプロパティにバインド -->
+    <!-- Bind Text property to UserName property in ViewModel -->
     <TextBox Text="{Binding UserName, Mode=TwoWay}" />
 
-    <!-- CommandプロパティをViewModelのGreetCommandにバインド -->
+    <!-- Bind Command property to GreetCommand in ViewModel -->
     <Button Content="挨拶する" Command="{Binding GreetCommand}" />
 
-    <!-- TextプロパティをViewModelのGreetingプロパティにバインド -->
+    <!-- Bind Text property to Greeting property in ViewModel -->
     <TextBlock Text="{Binding Greeting}" FontSize="16" HorizontalAlignment="Center" Margin="0,10,0,0" />
   </StackPanel>
 

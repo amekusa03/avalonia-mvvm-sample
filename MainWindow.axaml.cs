@@ -7,8 +7,8 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        // UIのロジックを担うViewModelを、このウィンドウのDataContext（データ源）として設定します。
-        // これにより、XAML側からViewModelのプロパティやコマンドにアクセスできるようになります。
+        // Set the ViewModel handling UI logic as the DataContext (data source) for this window.
+        // This allows access to ViewModel properties and commands from XAML.
         DataContext = new MainWindowViewModel();
     }
 }
